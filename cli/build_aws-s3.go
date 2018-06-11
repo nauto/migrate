@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/golang-migrate/migrate/source/aws-s3"
+	_ "github.com/karkok-nauto/migrate/source/aws-s3"
 )

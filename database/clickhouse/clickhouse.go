@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/golang-migrate/migrate"
-	"github.com/golang-migrate/migrate/database"
+	"github.com/karkok-nauto/migrate"
+	"github.com/karkok-nauto/migrate/database"
 )
 
 var DefaultMigrationsTable = "schema_migrations"

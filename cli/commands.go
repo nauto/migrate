@@ -3,9 +3,9 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/golang-migrate/migrate"
-	_ "github.com/golang-migrate/migrate/database/stub" // TODO remove again
-	_ "github.com/golang-migrate/migrate/source/file"
+	"github.com/karkok-nauto/migrate"
+	_ "github.com/karkok-nauto/migrate/database/stub" // TODO remove again
+	_ "github.com/karkok-nauto/migrate/source/file"
 	"os"
 	"path/filepath"
 	"strconv"

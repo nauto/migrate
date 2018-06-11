@@ -10,8 +10,8 @@ import (
 	nurl "net/url"
 
 	"context"
-	"github.com/golang-migrate/migrate"
-	"github.com/golang-migrate/migrate/database"
+	"github.com/karkok-nauto/migrate"
+	"github.com/karkok-nauto/migrate/database"
 	"github.com/lib/pq"
 )
 
