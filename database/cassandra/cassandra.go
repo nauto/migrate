@@ -24,6 +24,7 @@ var (
 	ErrNilConfig     = fmt.Errorf("no config")
 	ErrNoKeyspace    = fmt.Errorf("no keyspace provided")
 	ErrDatabaseDirty = fmt.Errorf("database is dirty")
+	ErrClosedSession = fmt.Errorf("session is closed")
 )
 
 type Config struct {
@@ -37,6 +38,33 @@ type Cassandra struct {
 
 	// Open and WithInstance need to guarantee that config is never nil
 	config *Config
+}
+
+func WithInstance(session *gocql.Session, config *Config) (database.Driver, error) {
+	if config == nil {
+		return nil, ErrNilConfig
+	} else if len(config.KeyspaceName) == 0 {
+		return nil, ErrNoKeyspace
+	}
+
+	if session.Closed() {
+		return nil, ErrClosedSession
+	}
+
+	if len(config.MigrationsTable) == 0 {
+		config.MigrationsTable = DefaultMigrationsTable
+	}
+
+	c := &Cassandra{
+		session: session,
+		config:  config,
+	}
+
+	if err := c.ensureVersionTable(); err != nil {
+		return nil, err
+	}
+
+	return c, nil
 }
 
 func (p *Cassandra) Open(url string) (database.Driver, error) {
