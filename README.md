@@ -83,7 +83,7 @@ __[Go Documentation](https://godoc.org/github.com/karkok-nauto/migrate)__
 import (
     "github.com/karkok-nauto/migrate"
     _ "github.com/karkok-nauto/migrate/database/postgres"
-    _ "github.com/golang-migrate/migrate/source/github"
+    _ "github.com/karkok-nauto/migrate/source/github"
 )
 
 func main() {
@@ -100,9 +100,9 @@ Want to use an existing database client?
 import (
     "database/sql"
     _ "github.com/lib/pq"
-    "github.com/golang-migrate/migrate"
-    "github.com/golang-migrate/migrate/database/postgres"
-    _ "github.com/golang-migrate/migrate/source/file"
+    "github.com/karkok-nauto/migrate"
+    "github.com/karkok-nauto/migrate/database/postgres"
+    _ "github.com/karkok-nauto/migrate/source/file"
 )
 
 func main() {
