@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/karkok-nauto/migrate/database/mysql"
+	_ "github.com/nauto/migrate/database/mysql"
 )

@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/karkok-nauto/migrate/database"
-	"github.com/karkok-nauto/migrate/source"
+	"github.com/nauto/migrate/database"
+	"github.com/nauto/migrate/source"
 )
 
 // DefaultPrefetchMigrations sets the number of migrations to pre-read

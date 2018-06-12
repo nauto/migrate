@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/karkok-nauto/migrate/source/google-cloud-storage"
+	_ "github.com/nauto/migrate/source/google-cloud-storage"
 )

@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/karkok-nauto/migrate/database/postgres"
+	_ "github.com/nauto/migrate/database/postgres"
 )

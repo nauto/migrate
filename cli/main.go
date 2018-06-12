@@ -10,7 +10,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/karkok-nauto/migrate"
+	"github.com/nauto/migrate"
 )
 
 // set main log

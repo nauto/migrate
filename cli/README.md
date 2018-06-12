@@ -5,8 +5,8 @@
 #### With Go toolchain
 
 ```
-$ go get -u -d github.com/karkok-nauto/migrate/cli github.com/lib/pq
-$ go build -tags 'postgres' -o /usr/local/bin/migrate github.com/karkok-nauto/migrate/cli
+$ go get -u -d github.com/nauto/migrate/cli github.com/lib/pq
+$ go build -tags 'postgres' -o /usr/local/bin/migrate github.com/nauto/migrate/cli
 ```
 
 Note: This example builds the cli which will only work with postgres.  In order
@@ -26,18 +26,18 @@ $ brew install migrate --with-postgres
 #### Linux (*.deb package)
 
 ```
-$ curl -L https://packagecloud.io/karkok-nauto/migrate/gpgkey | apt-key add -
-$ echo "deb https://packagecloud.io/karkok-nauto/migrate/ubuntu/ xenial main" > /etc/apt/sources.list.d/migrate.list
+$ curl -L https://packagecloud.io/nauto/migrate/gpgkey | apt-key add -
+$ echo "deb https://packagecloud.io/nauto/migrate/ubuntu/ xenial main" > /etc/apt/sources.list.d/migrate.list
 $ apt-get update
 $ apt-get install -y migrate
 ```
 
 #### Download pre-build binary (Windows, MacOS, or Linux)
 
-[Release Downloads](https://github.com/karkok-nauto/migrate/releases)
+[Release Downloads](https://github.com/nauto/migrate/releases)
 
 ```
-$ curl -L https://github.com/karkok-nauto/migrate/releases/download/$version/migrate.$platform-amd64.tar.gz | tar xvz
+$ curl -L https://github.com/nauto/migrate/releases/download/$version/migrate.$platform-amd64.tar.gz | tar xvz
 ```
 
 

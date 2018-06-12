@@ -3,8 +3,8 @@ package redshift
 import (
 	"net/url"
 
-	"github.com/karkok-nauto/migrate/database"
-	"github.com/karkok-nauto/migrate/database/postgres"
+	"github.com/nauto/migrate/database"
+	"github.com/nauto/migrate/database/postgres"
 )
 
 // init registers the driver under the name 'redshift'

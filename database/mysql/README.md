@@ -26,9 +26,9 @@ import (
     "database/sql"
     
     _ "github.com/go-sql-driver/mysql"
-    "github.com/karkok-nauto/migrate"
-    "github.com/karkok-nauto/migrate/database/mysql"
-    _ "github.com/karkok-nauto/migrate/source/file"
+    "github.com/nauto/migrate"
+    "github.com/nauto/migrate/database/mysql"
+    _ "github.com/nauto/migrate/source/file"
 )
 
 func main() {

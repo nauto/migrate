@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/karkok-nauto/migrate/database/ql"
+	_ "github.com/nauto/migrate/database/ql"
 )

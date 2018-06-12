@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/karkok-nauto/migrate"
-	"github.com/karkok-nauto/migrate/database"
+	"github.com/nauto/migrate"
+	"github.com/nauto/migrate/database"
 )
 
 var DefaultMigrationsTable = "schema_migrations"

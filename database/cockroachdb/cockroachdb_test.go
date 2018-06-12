@@ -10,8 +10,8 @@ import (
 	"testing"
 
 	"github.com/lib/pq"
-	dt "github.com/karkok-nauto/migrate/database/testing"
-	mt "github.com/karkok-nauto/migrate/testing"
+	dt "github.com/nauto/migrate/database/testing"
+	mt "github.com/nauto/migrate/testing"
 	"bytes"
 )
 

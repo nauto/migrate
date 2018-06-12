@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/go-sql-driver/mysql"
-	dt "github.com/karkok-nauto/migrate/database/testing"
-	mt "github.com/karkok-nauto/migrate/testing"
+	dt "github.com/nauto/migrate/database/testing"
+	mt "github.com/nauto/migrate/testing"
 )
 
 var versions = []mt.Version{

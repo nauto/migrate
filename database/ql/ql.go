@@ -10,8 +10,8 @@ import (
 	nurl "net/url"
 
 	_ "github.com/cznic/ql/driver"
-	"github.com/karkok-nauto/migrate"
-	"github.com/karkok-nauto/migrate/database"
+	"github.com/nauto/migrate"
+	"github.com/nauto/migrate/database"
 )
 
 func init() {

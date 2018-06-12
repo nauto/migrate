@@ -13,9 +13,9 @@ cd examples/migrations && go-bindata -pkg migrations .
 
 ```go
 import (
-  "github.com/karkok-nauto/migrate"
-  "github.com/karkok-nauto/migrate/source/go-bindata"
-  "github.com/karkok-nauto/migrate/source/go-bindata/examples/migrations"
+  "github.com/nauto/migrate"
+  "github.com/nauto/migrate/source/go-bindata"
+  "github.com/nauto/migrate/source/go-bindata/examples/migrations"
 )
 
 func main() {

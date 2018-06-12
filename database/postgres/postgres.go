@@ -10,8 +10,8 @@ import (
 	nurl "net/url"
 
 	"context"
-	"github.com/karkok-nauto/migrate"
-	"github.com/karkok-nauto/migrate/database"
+	"github.com/nauto/migrate"
+	"github.com/nauto/migrate/database"
 	"github.com/lib/pq"
 )
 

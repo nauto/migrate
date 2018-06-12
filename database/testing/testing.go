@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/karkok-nauto/migrate/database"
+	"github.com/nauto/migrate/database"
 )
 
 // Test runs tests against database implementations.

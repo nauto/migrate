@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/karkok-nauto/migrate/source"
+	"github.com/nauto/migrate/source"
 )
 
 // Test runs tests against source implementations.

@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/gocql/gocql"
-	"github.com/karkok-nauto/migrate/database"
+	"github.com/nauto/migrate/database"
 )
 
 func init() {

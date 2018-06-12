@@ -3,5 +3,5 @@
 package main
 
 import (
-	_ "github.com/karkok-nauto/migrate/source/github"
+	_ "github.com/nauto/migrate/source/github"
 )

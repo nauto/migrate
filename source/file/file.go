@@ -9,7 +9,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/karkok-nauto/migrate/source"
+	"github.com/nauto/migrate/source"
 )
 
 func init() {

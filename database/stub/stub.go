@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"reflect"
 
-	"github.com/karkok-nauto/migrate/database"
+	"github.com/nauto/migrate/database"
 )
 
 func init() {

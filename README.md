@@ -1,8 +1,8 @@
-[![Build Status](https://img.shields.io/travis/karkok-nauto/migrate/master.svg)](https://travis-ci.org/karkok-nauto/migrate)
-[![GoDoc](https://godoc.org/github.com/karkok-nauto/migrate?status.svg)](https://godoc.org/github.com/karkok-nauto/migrate)
-[![Coverage Status](https://img.shields.io/coveralls/github/karkok-nauto/migrate/master.svg)](https://coveralls.io/github/karkok-nauto/migrate?branch=master)
-[![packagecloud.io](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/karkok-nauto/migrate?filter=debs)
-[![GitHub Release](https://img.shields.io/github/release/karkok-nauto/migrate.svg)](https://github.com/karkok-nauto/migrate/releases)
+[![Build Status](https://img.shields.io/travis/nauto/migrate/master.svg)](https://travis-ci.org/nauto/migrate)
+[![GoDoc](https://godoc.org/github.com/nauto/migrate?status.svg)](https://godoc.org/github.com/nauto/migrate)
+[![Coverage Status](https://img.shields.io/coveralls/github/nauto/migrate/master.svg)](https://coveralls.io/github/nauto/migrate?branch=master)
+[![packagecloud.io](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/nauto/migrate?filter=debs)
+[![GitHub Release](https://img.shields.io/github/release/nauto/migrate.svg)](https://github.com/nauto/migrate/releases)
 
 
 # migrate
@@ -16,7 +16,7 @@ __Database migrations written in Go. Use as [CLI](#cli-usage) or import as [libr
  * Database drivers don't assume things or try to correct user input. When in doubt, fail.
 
 
-Looking for [v1](https://github.com/karkok-nauto/migrate/tree/v1)?
+Looking for [v1](https://github.com/nauto/migrate/tree/v1)?
 
 
 ## Databases
@@ -71,19 +71,19 @@ $ migrate -database postgres://localhost:5432/database up 2
  * API is stable and frozen for this release (v3.x).
  * Package migrate has no external dependencies.
  * Only import the drivers you need.
-   (check [dependency_tree.txt](https://github.com/karkok-nauto/migrate/releases) for each driver)
+   (check [dependency_tree.txt](https://github.com/nauto/migrate/releases) for each driver)
  * To help prevent database corruptions, it supports graceful stops via `GracefulStop chan bool`.
  * Bring your own logger.
  * Uses `io.Reader` streams internally for low memory overhead.
  * Thread-safe and no goroutine leaks.
 
-__[Go Documentation](https://godoc.org/github.com/karkok-nauto/migrate)__
+__[Go Documentation](https://godoc.org/github.com/nauto/migrate)__
 
 ```go
 import (
-    "github.com/karkok-nauto/migrate"
-    _ "github.com/karkok-nauto/migrate/database/postgres"
-    _ "github.com/karkok-nauto/migrate/source/github"
+    "github.com/nauto/migrate"
+    _ "github.com/nauto/migrate/database/postgres"
+    _ "github.com/nauto/migrate/source/github"
 )
 
 func main() {
@@ -100,9 +100,9 @@ Want to use an existing database client?
 import (
     "database/sql"
     _ "github.com/lib/pq"
-    "github.com/karkok-nauto/migrate"
-    "github.com/karkok-nauto/migrate/database/postgres"
-    _ "github.com/karkok-nauto/migrate/source/file"
+    "github.com/nauto/migrate"
+    "github.com/nauto/migrate/database/postgres"
+    _ "github.com/nauto/migrate/source/file"
 )
 
 func main() {
